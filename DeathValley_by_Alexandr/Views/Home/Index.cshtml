@@ -1,0 +1,140 @@
+﻿@{
+    ViewBag.Title = "Death Valley";
+}
+
+<div class="col-md-8" id="chart" style="width: 600px; height: 800px">
+   
+</div>
+
+<div class="col-md-4" >
+   
+   
+
+    @using (Ajax.BeginForm("DrawChart", null, null, new AjaxOptions { OnSuccess = "drawChart" }, new { @id = "js-validation-form" }))
+    {
+
+        <div id="error-message"> </div>
+
+        <table class="table">
+            <tr>
+                <td>Function:</td>
+                <td>y=</td>
+                <td> <input type="text" size="1" name="a"/> </td>
+                <td></td>
+                <td>x<sup>2</sup>+</td>
+                <td><input type="text" size="1" name="b"/></td>
+                <td></td>
+                <td>x+</td>
+                <td><input type="text" size="1" name="c"/></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>Step: </td>
+                <td><input type="text" name="step" size="1"/></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>From:</td>
+                <td><input type="text" name="x1" size="1"/></td>
+                <td></td>
+                <td align="center">to</td>
+                <td><input type="text" name="x2" size="1"/></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <input type="submit" class="btn btn-primary btn-lg" value="Plot"/>
+
+    }
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(function() {
+            $("#js-validation-form").validate({
+                rules: {
+                    a: {
+                        number: true
+                    },
+                    b: {
+                        number: true
+                    },
+                    c: {
+                        number: true
+                    },
+                    step: {
+                        required: true,
+                        number: true
+                    },
+                    x1: {
+                        required: true,
+                        number: true
+                    },
+                    x2: {
+                        required: true,
+                        number: true
+                    }
+                },
+                //focusCleanup: true,
+                focusInvalid: false,
+                errorPlacement: function (error, element) {
+                    //error.appendTo($('#error-message'));
+                    error.appendTo(element.parent("td").next("td"));
+                }
+
+            });
+
+        });
+    </script>
+    
+    
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+
+        function drawChart(dataChart) {
+
+            if(dataChart.er) alert(dataChart.er);
+            
+            var options = {
+                title: 'The chart of a parabola',
+                curveType: 'function',
+                legend: { position: 'left' },
+                hAxis: {
+                    title: 'X'
+                },
+                vAxis: {
+                    title: 'Y'
+                }
+            };
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', 'X');
+            data.addColumn('number', 'Y');
+
+            if (dataChart.Countries.length) {
+                $.each(dataChart.Countries,
+                    function(index, c) {
+                        data.addRow([c.X, c.Y]);
+                    });
+
+                var chart = new google.visualization.LineChart(document.getElementById('chart'));
+                chart.draw(data, options);
+            };
+
+        }
+
+    </script>
+
+}
