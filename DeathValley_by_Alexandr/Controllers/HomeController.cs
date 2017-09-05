@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Web;
 using DeathValley_by_Alexandr.Models;
@@ -25,8 +26,8 @@ namespace DeathValley_by_Alexandr.Controllers
         public JsonResult DrawChart(string a, string b, string c, string step, string x1, string x2)
         {
 
-
-            Chart chart=new Chart();
+            
+            //Chart chart=new Chart();
             JsonResult response = null;
             List<Point> data=new List<Point>();
             try
@@ -34,6 +35,7 @@ namespace DeathValley_by_Alexandr.Controllers
                 data = GetData(a + b + c + step + x1 + x2);
                 if (data.Count==0)
                 {
+                    Chart chart = new Chart();
                     data = chart.XY(a, b, c, step, x1, x2);
                     AddNewItemDB(data, a+b+c+step+x1+x2);
                 }

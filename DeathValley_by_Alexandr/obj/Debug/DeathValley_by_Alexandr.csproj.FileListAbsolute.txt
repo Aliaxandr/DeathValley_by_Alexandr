@@ -54,3 +54,4 @@ D:\Программирование\Projects\DeathValley_by_Alexandr\DeathValley
 D:\Программирование\Projects\DeathValley_by_Alexandr\DeathValley_by_Alexandr\bin\EntityFramework.SqlServer.dll
 D:\Программирование\Projects\DeathValley_by_Alexandr\DeathValley_by_Alexandr\bin\EntityFramework.xml
 D:\Программирование\Projects\DeathValley_by_Alexandr\DeathValley_by_Alexandr\bin\EntityFramework.SqlServer.xml
+D:\Программирование\Projects\DeathValley_by_Alexandr\DeathValley_by_Alexandr\obj\Debug\DeathValley_by_Alexandr.csprojResolveAssemblyReference.cache

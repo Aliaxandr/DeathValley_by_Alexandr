@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeathValley_by_Alexandr", "DeathValley_by_Alexandr\DeathValley_by_Alexandr.csproj", "{F25C45C9-0E7B-4903-9842-8F816151691F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{86ECB86A-B5A5-4139-813C-D3AF3703A939}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F25C45C9-0E7B-4903-9842-8F816151691F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F25C45C9-0E7B-4903-9842-8F816151691F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F25C45C9-0E7B-4903-9842-8F816151691F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86ECB86A-B5A5-4139-813C-D3AF3703A939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86ECB86A-B5A5-4139-813C-D3AF3703A939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86ECB86A-B5A5-4139-813C-D3AF3703A939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86ECB86A-B5A5-4139-813C-D3AF3703A939}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

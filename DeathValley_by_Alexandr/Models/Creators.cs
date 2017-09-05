@@ -14,7 +14,7 @@ namespace DeathValley_by_Alexandr.Models
         public abstract Entities CreateEntity();
     }
 
-    class ChartDataCreator:Creators
+    public class ChartDataCreator:Creators
     {
         public override Entities CreateEntity()
         {
@@ -22,7 +22,7 @@ namespace DeathValley_by_Alexandr.Models
         }
     }
 
-    class CoordinateCreator:Creators
+    public class CoordinateCreator:Creators
     {
         public override Entities CreateEntity()
         {
