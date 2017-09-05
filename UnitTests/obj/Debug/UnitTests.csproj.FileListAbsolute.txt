@@ -17,7 +17,6 @@ D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\b
 D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\bin\Debug\DeathValley_by_Alexandr.dll
 D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\bin\Debug\System.Web.Optimization.dll
-D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\bin\Debug\System.Web.Mvc.dll
 D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\bin\Debug\EntityFramework.dll
 D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\bin\Debug\Microsoft.Web.Infrastructure.dll
 D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\bin\Debug\System.Web.Razor.dll
@@ -35,3 +34,6 @@ D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\b
 D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\obj\Debug\UnitTests.dll
 D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\obj\Debug\UnitTests.pdb
+D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\bin\Debug\UnitTests.dll.config
+D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+D:\Программирование\Projects\DeathValley_by_Alexandr\UnitTests\bin\Debug\EntityFramework.SqlServer.xml

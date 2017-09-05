@@ -35,6 +35,7 @@ namespace DeathValley_by_Alexandr.Controllers
                 data = GetData(a + b + c + step + x1 + x2);
                 if (data.Count==0)
                 {
+                    
                     Chart chart = new Chart();
                     data = chart.XY(a, b, c, step, x1, x2);
                     AddNewItemDB(data, a+b+c+step+x1+x2);
@@ -54,7 +55,7 @@ namespace DeathValley_by_Alexandr.Controllers
         }
 
 
-        List<Point> GetData(string data)
+        public List<Point> GetData(string data)
         {
             //ChartDBContext context=new ChartDBContext();
             ChartDBContext context=ChartDBContext.Instance;
